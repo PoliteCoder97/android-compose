@@ -39,6 +39,7 @@ import kotlin.math.atan2
 import kotlin.math.roundToInt
 
 
+@ExperimentalComposeUiApi
 @Composable()
 fun DragableMusicKnobWidget(
     modifier: Modifier = Modifier
@@ -69,7 +70,7 @@ fun DragableMusicKnobWidget(
     }
 }
 
-@OptIn(ExperimentalComposeUiApi::class)
+@ExperimentalComposeUiApi
 @Composable()
 fun MusicKnob(
     modifier: Modifier = Modifier,
@@ -120,7 +121,7 @@ fun MusicKnob(
                             rotation = fixedAngle
 
                             val percentage =
-                                (fixedAngle - limitingAngle) / (360 - 2 * limitingAngle)
+                                (fixedAngle - limitingAngle) / (360 - (2 * limitingAngle))
                             onValueChange(percentage)
                             true
                         } else false
