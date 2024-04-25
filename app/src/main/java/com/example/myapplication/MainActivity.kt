@@ -7,8 +7,8 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
-import com.example.myapplication.meditation.pages.MeditationPage
 import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.example.myapplication.widgets.InstagramProfile
 
 class MainActivity : ComponentActivity() {
     @ExperimentalComposeUiApi
@@ -64,7 +64,8 @@ class MainActivity : ComponentActivity() {
 //                }
 //            }
             MyApplicationTheme {
-                MeditationPage()
+//            MeditationPage()
+            InstagramProfile()
             }
         }
     }
