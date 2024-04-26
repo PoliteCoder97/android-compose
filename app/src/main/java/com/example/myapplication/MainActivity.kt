@@ -8,7 +8,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import com.example.myapplication.ui.theme.MyApplicationTheme
-import com.example.myapplication.widgets.InstagramProfile
+import com.example.myapplication.widgets.MultySelectLazyColumn
 
 class MainActivity : ComponentActivity() {
     @ExperimentalComposeUiApi
@@ -65,7 +65,8 @@ class MainActivity : ComponentActivity() {
 //            }
             MyApplicationTheme {
 //            MeditationPage()
-            InstagramProfile()
+//            InstagramProfile()
+              MultySelectLazyColumn()
             }
         }
     }
